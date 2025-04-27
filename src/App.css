@@ -1,38 +1,650 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========== NAVBAR ========== */
+.header-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo1 {
+  width: 150px;
+}
+
+.nav-container {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: #0C0D0E;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-li a:hover {
+  color: #f77f00;
+}
+
+button {
+  background-color: #f77f00;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004080;
+}
+
+
+/* ========== HERO ========== */
+.hero {
+  width: 100%;
+  height: 850px;
+  background-image: url('../src/assets/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-text {
+  margin-left: 120px;
+  color: white;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5); /* opțional pentru claritate pe background */
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* opțional */
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.btn-principal {
+  background-color: #f77f00;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #cc5e00;
+}
+
+/* ========== SERVICES ========== */
+.servicii-container {
+  background-color: #f2f2f2;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titlu-container h2 {
+  font-size: 2.2rem;
+  color: #004080;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.servicii-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.s-info {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.s-info p {
+  margin-bottom: 1rem;
+}
+
+.servicii {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.carduri {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  width: 270px;
+  flex-shrink: 0;
+  background-color: white;
+  padding: 2rem;
+  margin-right: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.carduri-container {
+  width: 480px; 
+  overflow: hidden;
+}
+
+.card img {
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.buttons-carousel {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #004080;
   color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #002a5c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ========== DESPRE AUTOBASCULANTĂ ȘI DESPRE TSA CONSTRUCT ========== */
+
+/* ========== INFORMATII DESPRE AUTOBASCULANTA ========== */
+.informatii-container {
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.titlu-container {
+  margin-bottom: 3rem;
+}
+
+.titlu-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004080;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.info-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-paragraf {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.info-paragraf strong {
+  color: #004080;
+}
+
+.info-caracteristici {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.caracteristica {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: background-color 0.3s;
+}
+
+.caracteristica:hover {
+  background-color: #e6e6e6;
+}
+
+.sageata-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.despre-container {
+  background-image: url('../src/assets/about-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* efect de parallax light */
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #004080;
+}
+
+.despre {
+  background-color: rgba(255, 255, 255, 0.85); /* strat alb semi-transparent */
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlu-despre {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #004080;
+}
+
+.lisat-despre {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.despr {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.despr:hover {
+  transform: translateY(-8px); /* efect mic de hover */
+}
+
+.h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #004080;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.despr p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.btn-principal {
+  background-color: #f77f00;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #cc5e00;
+}
+
+/* ========== TESTIMONIALE ========== */
+.testimoniale-container {
+  padding: 4rem 2rem;
+  background: #ffffff;
+}
+
+.titlu-testimoniale {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimoniale-wrapper {
+  overflow: hidden;
+  width: 320px; /* lățimea unui card */
+  margin: 0 auto;
+}
+
+.testimoniale-carduri {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.client-card {
+  flex-shrink: 0;
+  width: 300px;
+  background: #f8f9fa;
+  padding: 2rem;
+  margin: 0 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-card-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.detalii-client h4 {
+  color: #004080;
+  margin: 0.5rem 0;
+}
+
+.client-status {
+  color: #f77f00;
+  font-size: 1rem;
+}
+
+.testimonial p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+#btn-t {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.prev-btn-t, .next-btn-t {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prev-btn-t:hover, .next-btn-t:hover {
+  background-color: #002a5c;
+}
+
+
+/* ========== CONTACT ========== */
+.contacteaza-container {
+  padding: 4rem 2rem;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.titlu-container {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+form {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input {
+  text-align: left;
+}
+
+.input label {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #004080;
+}
+
+.input input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input input:focus {
+  border-color: #004080;
+  box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+}
+
+.btn-principal {
+  background-color: #f77f00;
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-principal:hover {
+  background-color: #cc5e00;
+}
+
+.detalii-firma {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-firma {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #004080;
+}
+
+.detaliu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.detaliu img {
+  width: 28px;
+  height: 28px;
+}
+
+/* ========== MAP ========== */
+.harta-container {
+  padding: 4rem 2rem;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.harta-container h2 {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 2rem;
+}
+
+.harta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.harta iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 450px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== FOOTER ========== */
+.footer-container {
+  background: #004080;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.footer-meniu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer-meniu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-meniu li {
+  margin: 0.5rem 0;
+}
+
+.footer-meniu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-meniu a:hover {
+  text-decoration: underline;
+}
+
+.btn-footer {
+  background: #f77f00;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-footer:hover {
+  background-color: #cc5e00;
+}
+
+.copy {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
