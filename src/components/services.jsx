@@ -15,7 +15,7 @@ function Services() {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
 
-  const cards = [realCards[realCards.length - 1], ...realCards, realCards[0]]; // [ultimul, ...reale, primul]
+  const cards = [realCards[realCards.length - 1], ...realCards, realCards[0]];
 
   const handleNext = () => {
     setCurrentIndex(prev => prev + 1);

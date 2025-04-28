@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import phoneIcon from '../assets/telefon.png';
 import mailIcon from '../assets/mail.png';
 import addressIcon from '../assets/adresa.png';
-import '../app.css'; // stiluri generale
+import '../app.css'; 
 
 function Contact() {
   const [formData, setFormData] = useState({

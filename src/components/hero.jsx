@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import heroImage from '../assets/hero-img.jpg'; // importăm imaginea
+import heroImage from '../assets/hero-img.jpg';
 import '../app.css'; 
 
 function Hero() {

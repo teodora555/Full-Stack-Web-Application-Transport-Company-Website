@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // folosim react-scroll pentru scroll smooth
-import logo from '../assets/logo-TSA-header.png'; // ai redenumit corect imaginea!
+import { Link } from 'react-scroll'; 
+import logo from '../assets/logo-TSA-header.png';
 
 function Navbar() {
   return (

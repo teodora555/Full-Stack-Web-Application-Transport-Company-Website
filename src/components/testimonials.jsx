@@ -26,7 +26,7 @@ function Testimonials() {
     },
   ];
 
-  const testimonials = [...realTestimonials, ...realTestimonials]; // dublează pentru infinit
+  const testimonials = [...realTestimonials, ...realTestimonials];
   const [currentIndex, setCurrentIndex] = useState(realTestimonials.length);
 
   const handlePrev = () => {
